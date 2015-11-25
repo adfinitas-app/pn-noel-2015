@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <!-- Start of Woopra Code -->
+        <script>
+        function extractUrlParams(){ 
+            var t = document.location.search.substring(1).split('&'); var f = [];
+            for (var i=0; i<t.length; i++){
+                var x = t[ i ].split('=');
+                f[x[0]]=decodeURIComponent(x[1]);
+            }
+            return f;
+        };
+
+        (function(){
+            var t,i,e,n=window,o=document,a=arguments,s="script",r=["config","track","identify","visit","push","call","trackForm","trackClick"],c=function(){var t,i=this;for(i._e=[],t=0;r.length>t;t++)(function(t){i[t]=function(){return i._e.push([t].concat(Array.prototype.slice.call(arguments,0))),i}})(r[t])};for(n._w=n._w||{},t=0;a.length>t;t++)n._w[a[t]]=n[a[t]]=n[a[t]]||new c;i=o.createElement(s),i.async=1,i.src="//static.woopra.com/js/w.js",e=o.getElementsByTagName(s)[0],e.parentNode.insertBefore(i,e)
+        })("woopra");
+
+        woopra.config({
+            domain: 'perce-neige.org'
+        });
+
+        var p = extractUrlParams();
+
+        if ('email' in p) {
+            if ('lastname' in p && 'firstname' in p) {
+                woopra.identify({
+                    email: p['email'],
+                    name: p['firstname'] + ' ' + p['lastname']
+                });
+            } else {woopra.identify({email: p['email']})}
+        }
+
+        woopra.track();
+        </script>
+        <!-- End of Woopra Code -->
+        <meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,700,900' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/style.css" type="text/css">
+		<meta name="description" content="50 ans après l’appel de Lino Ventura en faveur des «enfants pas comme les autres», Perce-Neige poursuit la mission initiée par son fondateur et appelle à nouveau à une grande mobilisation solidaire." >
+		<meta property="og:site" content="website" />
+		<meta property="og:description" content="50 ans après l’appel de Lino Ventura en faveur des «enfants pas comme les autres», Perce-Neige poursuit la mission initiée par son fondateur et appelle à nouveau à une grande mobilisation solidaire." />
+		<meta property="og:image" content="http://tousaveclino.perce-neige.org/medias/share.jpg" />
+		
+		<meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="@PerceNeigeinfos" />
+        <meta name="twitter:title" content="Perce Neige - TousAvecLino" />
+        <meta name="twitter:description" content="50 ans de l’appel de Lino, êtes-vous prêt à vous mobiliser ? #TousAvecLino" />
+        <meta name="twitter:image" content="http://tousaveclino.perce-neige.org/medias/share.jpg" />
+		<title>Perce Neige - TousAvecLino</title>
+    </head>
+    <body>
+		
+
+	    <div id="page">
+        	
+<div id="welcome">
+   <div id="nav">
+        <div class="logo">
+            <a href="http://www.perce-neige.org/" target="_blank">
+                <img src="medias/logo-lino.jpg" alt="Perce-Neige">
+            </a>
+        </div>
+        <a href="https://donner.perce-neige.org/b?cid=29" target="_blank" class="button">FAIRE UN DON</a>
+    </div>
+    <div class="credits">© Jean-Marie Périer</div>
+    <img src="medias/bg-welcome.jpg">
+</div>
+<div id="actions">
+    <div class="section--box row">
+        <div class="columns medium-5 hide-for-small">
+            <a href="xxx" target="_blank">
+                <div id="camera"><img src="medias/camera-lino.png"></div>
+            </a>
+        </div>
+        <div class="columns medium-7">
+            <div class="row">
+                <div class="columns small-text-center small-12 medium-text-left medium-4">
+                    <img src="medias/50-ans-actions.png" alt="50 ans d'actions !" class="action50" >          
+                </div>
+                <div class="columns small-12 medium-8">
+                    <h2>Pour les personnes "pas comme les autres",</h2>
+                    <div class="sprite punchline-1"></div>
+                    <h2>Il y a 50 ans, un homme seul s’adressait aux Français. Il parlait des enfants « pas comme les autres ». Il parlait de sa volonté d'agir pour les aider.</h2>
+                </div>
+            </div>
+            <div class="row">
+                <p>Il y a 50 ans, un grand nombre de personnes le rejoignaient. Des célébrités, comme lui, mais aussi des anonymes, de toute la France.</p>
+                <p>Aujourd’hui, 50 ans après son appel à l'ORTF, ils se sont tous réunis, hommes et femmes du cinéma autour de Christophe Lasserre-Ventura, un petit fils du fondateur et Président de Perce-Neige, pour poursuivre cet instant avec une photo souvenir et renouveler l’engagement de Lino Ventura pour les enfants «&nbsp;pas comme les autres&nbsp;».</p>
+                <p>
+                    <a href="xxx" class="button" target="_blank">Voir le Making Of</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="video" class="section">
+    <div class="section--box row">
+        <div class="columns medium-6">
+           
+            <div class="sprite punchline-2"></div>
+            <p>L’image est en noir et blanc mais l’engagement, la volonté, l'humanité, restent intactes.</p>
+            <p>50 ans après l’appel de Lino Ventura en faveur des « enfants pas comme les autres », Perce-Neige poursuit la mission initiée par son fondateur.</p>
+            <p><b>« Si ces enfants vivent, il faut avoir la dignité et le courage de les emmener jusqu’au bout de leur vie.»</b></p>
+            <p><b>Aujourd’hui, vous aussi, vous pouvez vous associer à l’action de Perce-Neige. Mobilisez-vous !</b></p>
+            <h2>Merci pour votre soutien !</h2>
+        </div>
+        <div class="columns medium-6">
+            <div id="tv-box">
+                <div id="tv">
+                    <div id="tv-hd" class="hide-for-small">
+                        <img id="tv-mask" src="medias/tv-lino-mask.png" class="cmd_video" style="display:none;">
+                        <img id="tv-noise" src="medias/tv-noise.gif" style="display:none;">
+                        <img id="tv-real" src="medias/tv-lino.png" class="cmd_video">
+                        <div id="tv-src">Source INA</div>
+                        <a href="#" target="_blank" class="cmd_video"><div class="sprite play"></div></a>
+                        <h3 class="cmd_video">Voir la vidéo</h3>
+                        <p>6 décembre 1965, Lino Ventura alerte<br>l'opinion publique...</p>
+                        <div id="sharing" class="hide-for-small">
+                            Partagez l’appel de Lino Ventura<br>sur les réseaux sociaux avec le<br>hashtag <b class="hashtag share-tw">#TousAvecLino</b>
+                            <p>
+                            <a href="#" class="sprite facebook soc share-fb"></a>
+                            <span class="sprite spacer"></span>
+                            <a href="#" class="sprite twitter soc share-tw"></a> 
+                            <span class="sprite spacer"></span>
+                            <a href="#" class="sprite googleplus soc share-gp"></a> 
+                            </p>
+                        </div>
+                    </div>
+                    <div id="tv-youtube">
+                        <iframe class="show-for-small" src="https://www.youtube.com/embed/gQTUmraGC50?showinfo=0&autoplay=0" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div id="don" class="section parallax bg-img" data-offset-y=".1">
+    <div class="section--box row">
+        <img src="medias/bg-don.jpg" class="show-for-small" id="gens">
+        <div class="columns medium-7 hide-for-small">
+        </div>
+        <div class="columns medium-5">
+            <h2>Aidez Perce-Neige à poursuivre son action en faveur des personnes handicapées et de leurs familles.</h2>
+            <p>
+                <a href="https://donner.perce-neige.org/b?cid=29" class="button" target="_blank">JE FAIS UN DON</a>                
+            </p>
+            <p class="legend">66% de votre don est déductible de votre impôt sur le revenu.</p>
+            <h2>Affichez votre solidarité !</h2>
+            <div class="row">
+                <div class="columns medium-6">
+                    <p>Les 300 premiers donateurs ayant fait un don de 150&nbsp;€ ou plus recevront <b>une écharpe Perce-Neige</b>. Symbole de la chaleur et de la protection dont les personnes handicapées mentales ont tant besoin pour s'épanouir.</p>
+                </div>
+                <div class="columns medium-6">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="perce" class="section parallax bg-img" data-offset-y="-.2">
+   <img src="medias/echarpe.png" alt="Echarpe Perce Neige" id="echarpe">
+    <div class="section--box">
+        <div class="row text-center">
+            <p class="big">Perce-Neige est une association loi 1901 reconnue d'utilité publique,<br>membre du Comité de la Charte du don en confiance</p>
+            <hr>
+            <p class="big">Créée en 1966 l’Association mène des actions en faveur des personnes en situation de handicap.</p>
+       </div>
+       <div class="row">
+           <div class="columns medium-4 argu">
+               <div class="sprite ico-1"></div>
+               <p><b>Réalisation et gestion de «Maisons Perce-Neige»</b> pour la prise en charge et l’accompagnement quotidien des personnes handicapées</p>
+           </div>
+           <div class="columns medium-4 argu">
+               <div class="sprite ico-2"></div>
+               <p><b>Conseil et soutien</b> auprès des familles, souvent confrontées à l’isolement</p>
+           </div>
+           <div class="columns medium-4 argu">
+               <div class="sprite ico-3"></div>
+               <p><b>Sensibilisation des instances publiques</b>, comme le grand public, à la cause du handicap.</p>
+           </div>
+       </div>
+    </div>
+</div>
+
+<div id="footer" class="section">
+    <div class="section--box row">
+        <div class="columns medium-4 small-text-center medium-text-left">
+            <p>
+                <a href="http://www.perce-neige.org/" target="_blank" class="orange">www.perce-neige.org</a><br>
+                <a href="http://www.perce-neige.org/contact.html" target="_blank" class="orange">contact</a>
+            </p>
+        </div>
+        <div class="columns medium-4 text-center">
+            <p>
+                <a href="http://www.perce-neige.org/pied-de-page/mentions-legales.html" target="_blank" class="blue">Mentions légales</a>
+            </p>
+        </div>
+        <div class="columns medium-4 small-text-center medium-text-right">
+                   <a href="http://www.comitecharte.org/" target="_blank"><img src="medias/don-confiance.png" alt="Don en confiance" id="confiance"></a>
+            <p><b>Perce-Neige</b> est agréée par<br>le Comité de la Charte du don en confiance</p>
+        </div>
+    </div>
+</div>
+<div id="address" class="section">
+    <div class="section--box text-center">
+        <b>Association Perce-Neige</b> | 102 bis, boulevard Saint-Denis | 92415 Courbevoie Cedex | Tél. 01.47.17.19.30
+    </div>
+</div>
+
+
+
+
+
+        </div>
+        <script src="js/javascript.js"></script>        
+    </body>
+</html>
